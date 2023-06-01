@@ -23,14 +23,14 @@ class DateTime
 {
 public:
 	/**
-	 * @brief Construct a new Date Time object and start running
-	 *
-	 * @param startSecond Seconds to start with
-	 * @param startMinute Minutes to start with
-	 * @param startHour Hours to start with
-	 * @param startDay Days to start with
-	 * @param startMonth Month to start with
-	 * @param startYear Year to start with
+	 * @brief Construct a new Date Time object
+	 * 
+	 * @param startSecond 
+	 * @param startMinute 
+	 * @param startHour 
+	 * @param startDay 
+	 * @param startMonth 
+	 * @param startYear 
 	 */
 	explicit DateTime(int startSecond = 0, int startMinute = 0, int startHour = 0, int startDay = 1, int startMonth = 1, int startYear = 2000) : year(startYear),
 																																				 month(&year, startMonth, 1, 12),
@@ -47,24 +47,24 @@ public:
 	};
 
 	/**
-	 * @brief Counts up by one second
-	 *
+	 * @brief 
+	 * 
 	 */
 	void countSecond();
 
 	/**
-	 * @brief This will run the dateTime Class. Each call may result in one increment
-	 *
+	 * @brief 
+	 * 
 	 */
 	void runDateTime();
 
 private:
 	/**
-	 * @brief Check if the year provided is a leap year. This is needed to check if february is 28 days or 29 days.
-	 *
-	 * @param year the year which should be checked
-	 * @return true It is a leap year
-	 * @return false It is no leap year
+	 * @brief 
+	 * 
+	 * @param year 
+	 * @return true 
+	 * @return false 
 	 */
 	bool isLeapYear(int year = 2000);
 
