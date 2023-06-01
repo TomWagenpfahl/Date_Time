@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>251288627</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\..\..\..\Desktop\Studium\Elektrotechnik\Semester6\Embedded_Systems\Controller\Uebung7\main.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\Desktop\Studium\Elektrotechnik\Semester6\Embedded_Systems\Controller\Andere\main.cpp</file>
+            <file>$PROJ_DIR$\..\..\..\..\Desktop\Studium\Elektrotechnik\Semester6\Embedded_Systems\Controller\Andere\StmGpio.h</file>
+            <file>$PROJ_DIR$\..\..\..\..\Desktop\Studium\Elektrotechnik\Semester6\Embedded_Systems\Controller\Andere\dummy.cpp</file>
+            <file>$PROJ_DIR$\main.cpp</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\main.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>
