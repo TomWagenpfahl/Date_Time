@@ -50,7 +50,7 @@ public:
     virtual bool checkRun() = 0;
 
     /**
-     * @brief Check weather to show the time. Returns true if time should be shown.
+     * @brief Check when to show the time. Returns true if time should be shown.
      * 		  Return false if it is not the case.
      */
     virtual bool checkShow() = 0;
