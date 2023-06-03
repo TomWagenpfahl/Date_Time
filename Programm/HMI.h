@@ -54,6 +54,13 @@ public:
      * 		  Return false if it is not the case.
      */
     virtual bool checkShow() = 0;
+
+    /**
+     * @brief Get the Instance object (Singleton implementation: Only one HMI should exist)
+     * 
+     * @return HMI& 
+     */
+    static HMI &getInstance();
 };
 
 #endif //_HMI_H

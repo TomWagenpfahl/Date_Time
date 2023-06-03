@@ -6,7 +6,10 @@
 
 #include "HardwareHMI.h"
 
-HardwareHMI *HardwareHMI::hmi = nullptr;
+HardwareHMI::HardwareHMI() : gpioA(GPIOA_ADDRESS), gpioB(GPIOB_ADDRESS)
+{
+    setupHardware();
+}
 
 void HardwareHMI::setupHardware()
 {
@@ -70,18 +73,9 @@ void HardwareHMI::setLEDs(bool led_1, bool led_2, bool led_3, bool led_4)
         gpioB.ClearPin(LED_4_B);
 }
 
-HardwareHMI *HardwareHMI::getInstance()
-{
-    if (hmi == nullptr)
-    {
-        hmi = new HardwareHMI();
-    }
-
-    return hmi;
-}
-
 void HardwareHMI::showDate(int day, int month, int year)
 {
+    cout << "Date" << endl;
     // separator
     setLEDs(true, false, true, false);
     sleep();
@@ -137,6 +131,7 @@ void HardwareHMI::showDate(int day, int month, int year)
 
 void HardwareHMI::showTime(int hour, int minute, int second)
 {
+    cout << "Time" << endl;
     // separator
     setLEDs(true, false, true, false);
     sleep();
@@ -204,6 +199,24 @@ bool HardwareHMI::checkRun()
 
     return isRunning;
 }
+
+void HardwareHMI::sleep()
+{
+    for (int i = 0; i < 1000000; i++)
+        ;
+};
+
+void HardwareHMI::sleepLong()
+{
+    for (int i = 0; i < 10000000; i++)
+        ;
+};
+
+void HardwareHMI::showDateTime(int day, int month, int year, int hour, int minute, int second)
+{
+    showDate(day, month, year);
+    showTime(hour, minute, second);
+};
 
 bool HardwareHMI::checkShow()
 {

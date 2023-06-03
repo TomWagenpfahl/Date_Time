@@ -5,21 +5,21 @@
  */
 
 #include "DateTime.h"
-HMI *DateTime::hmi = nullptr;
 const int DateTime::LEAP_YEAR_ARRAY[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 const int DateTime::NON_LEAP_YEAR_ARRAY[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 const uint32_t DateTime::SECONDS_FOR_SMALLEST_MONTH = 2419200;
 
-void DateTime::runDateTime()
-{
-    if (hmi->checkRun())
-    {
-        countSecond();
-    }
+#if defined(CONSOLE_HMI_USED)
+    HMI &DateTime::hmi = ConsoleHMI::getInstance();
+#else
+    HMI &DateTime::hmi = HardwareHMI::getInstance();
+#endif // CONSOLE_HMI_USED
 
-    if (hmi->checkShow())
+void DateTime::run()
+{
+    if (hmi.checkShow())
     {
-        hmi->showDateTime(
+        hmi.showDateTime(
             day.getCount(),
             month.getCount(),
             year.getCount(),
@@ -27,6 +27,11 @@ void DateTime::runDateTime()
             minute.getCount(),
             second.getCount());
     }
+    if (hmi.checkRun())
+    {
+        countSecond();
+    }
+
 }
 
 void DateTime::countSecond()

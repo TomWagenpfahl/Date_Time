@@ -12,7 +12,7 @@ int main()
     // Loop the DateTime Programm
     while (true)
     {
-        dateTime.runDateTime();
+        dateTime.run();
     }
     return 0;
 }

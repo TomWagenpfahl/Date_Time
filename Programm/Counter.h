@@ -11,15 +11,16 @@ class Counter
 {
 public:
 	/**
-	 * @brief Construct a new Counter object
-	 * 
-	 * @param startCount 
+	 * @brief Construct a new Counter object which counts up one at a time.
+	 *
+	 * @param startCount
 	 */
 	explicit Counter(int startCount = 0) : count(startCount) {}
 
 	/**
-	 * @brief 
-	 * 
+	 * @brief Getter of the count
+	 *
+	 * @return int
 	 */
 	virtual int getCount()
 	{
@@ -27,8 +28,8 @@ public:
 	};
 
 	/**
-	 * @brief 
-	 * 
+	 * @brief Increments the count by one
+	 *
 	 */
 	virtual void increment()
 	{
@@ -36,9 +37,9 @@ public:
 	};
 
 	/**
-	 * @brief Set the Count object
-	 * 
-	 * @param newCount 
+	 * @brief Setter of the count
+	 *
+	 * @param newCount
 	 */
 	void setCount(int newCount)
 	{
@@ -46,7 +47,7 @@ public:
 	};
 
 private:
-	int count; // Stores the count value of the counter object
+	int count; //! Stores the count value of the counter object
 };
 
 #endif //_COUNTER_H

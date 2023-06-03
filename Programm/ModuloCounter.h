@@ -14,25 +14,25 @@ class ModuloCounter : public Counter
 public:
 	/**
 	 * @brief Construct a new Modulo Counter object
-	 * 
-	 * @param nextModuloCounter 
-	 * @param startValue 
-	 * @param moduloValue 
+	 *
+	 * @param nextModuloCounter Address of the next modulo counter
+	 * @param startValue value at which the counter will start counting
+	 * @param moduloValue value at which the counter will reset to zero
 	 */
 	ModuloCounter(Counter *nextModuloCounter = nullptr, int startValue = 0, int moduloValue = 100) : Counter(startValue),
 																									 nextCounter(nextModuloCounter),
 																									 moduloValue(moduloValue){};
 
 	/**
-	 * @brief 
-	 * 
+	 * @brief Increments the counter and resets to zero when reaching the modulo value
+	 *
 	 */
 	virtual void increment();
 
 	/**
-	 * @brief Set the Modulo Value object
-	 * 
-	 * @param newValue 
+	 * @brief Setter of the modulo value
+	 *
+	 * @param newValue
 	 */
 	void setModuloValue(int newValue)
 	{
@@ -41,9 +41,9 @@ public:
 	};
 
 	/**
-	 * @brief Get the Modulo Value object
-	 * 
-	 * @return int 
+	 * @brief Getter of the modulo value
+	 *
+	 * @return int
 	 */
 	int getModuloValue()
 	{
@@ -51,8 +51,8 @@ public:
 	};
 
 private:
-	Counter *nextCounter; // Stores the adress of the next modulo counter. This counter is incremented if modulo value is reached
-	int moduloValue;	  // Stores the value at which the next counter is called and this counter is reset
+	Counter *nextCounter; //! Stores the adress of the next modulo counter. This counter is incremented if modulo value is reached
+	int moduloValue;	  //! Stores the value at which the next counter is called and this counter is reset
 };
 
 #endif //_MODULOCOUNTER_H

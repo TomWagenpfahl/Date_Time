@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 2.37.70-967b1fb8a (experimental) (Applications 23.07.70) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="UML Model">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="dataType" name="dataType"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="constructor" name="constructor"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="explicit constructor" name="explicit constructor"/>
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="enum" name="enum"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical_View" name="Logical View">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder">
+        <packagedElement xmi:type="uml:DataType" xmi:id="uQGYFI9kdAoeu" name="char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ueqrIsFIkpRLE" name="int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uwZz3sr0WdHIW" name="float" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ufHCCObWwH3Dm" name="double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uGr0jAsUfMaGR" name="bool" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uUGZWvy1tKWK8" name="string" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uuGL4N0PMe6m6" name="unsigned char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uYFybZb7tvAIK" name="signed char" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ux4RKzvFZLXB5" name="unsigned int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uEa7RBsostNg5" name="signed int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uCafOBL79GkoG" name="short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uSwU5paRoG8CK" name="unsigned short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uLCYsIseQUZwy" name="signed short int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uZLJPDaLjPfWr" name="long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="udxymGM0YsHbW" name="signed long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uUx0qZh6mN5wy" name="unsigned long int" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uPQPnUKMl0I5P" name="long double" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uCZF0bbX3c0Hw" name="wchar_t" stereotype="dataType"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uWeDC1MIV7zvU" name="const ConsoleHMI&amp;" elementReference="uiqQqm1kQbqx8" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uSo7sIFp7mfeu" name="ConsoleHMI&amp;" elementReference="uiqQqm1kQbqx8" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uVZKjk3PHTi5R" name="HMI&amp;" elementReference="uWaj7uxNthXaP" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ulRySBA3fqV1d" name="const uint32_t" elementReference="uUQaxy2hOqXQX" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uPn0DbyoyRTTg" name="const int[12]" elementReference="ueqrIsFIkpRLE" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ueYyi2YfyrXGk" name="const HardwareHMI&amp;" elementReference="uSnUV50wMi6a1" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uHVGqIH8pTBjl" name="HardwareHMI&amp;" elementReference="uSnUV50wMi6a1" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="ulI00WhGyV6uE" name="const int" elementReference="ueqrIsFIkpRLE" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uIdxqmfjvSXmu" name="Counter*" elementReference="uN3p1WsgLnAwN" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="un3JHsuH1fT6h" name="volatile uint32_t&amp;" elementReference="uUQaxy2hOqXQX" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uyeHEMDW9au0F" name="const volatile uint32_t&amp;" elementReference="uUQaxy2hOqXQX" isActive="false"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="uJs7lvSaNX1Kv" name="volatile uint16_t&amp;" elementReference="u4dWSaTwuWwss" isActive="false"/>
+      </uml:Package>
+      <packagedElement xmi:type="uml:Class" xmi:id="uTDzxns4euUsX" name="DateTime">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uixyah8BMtMSK" name="hmi" comment="The human machine interface which can either be console or hardware of STM32&#13;" visibility="private" ownerScope="classifier" type="uVZKjk3PHTi5R"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uV8Zld7WK8O61" name="year" comment="The year counter object&#13;" visibility="private" type="uN3p1WsgLnAwN"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uPkg198yJwNWH" name="month" comment="The month counter object&#13;" visibility="private" type="uSWqIhDxtxemZ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uGPwOCLbS6x98" name="day" comment="The day counter object&#13;" visibility="private" type="uSWqIhDxtxemZ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uYzSDQcmG7qZh" name="hour" comment="The hour counter object&#13;" visibility="private" type="uJIzHtUAQqNI5"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uW8qE8sfGGC2p" name="minute" comment="The minute counter object&#13;" visibility="private" type="uJIzHtUAQqNI5"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uml2mssXfcjlr" name="second" comment="The second counter object&#13;" visibility="private" type="uJIzHtUAQqNI5"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ua3OP6NhBcOq6" name="updateDaysCounter" comment="counts the seconds to update the date of the month once every month period.&#13;" visibility="private" type="uUQaxy2hOqXQX"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ufE0hFbtBys6I" name="SECONDS_FOR_SMALLEST_MONTH" comment="60s * 60min * 24h * 28days The time that the smallest month could be. This is needed to update the days not every second but every month.&#13;" visibility="private" ownerScope="classifier" type="ulRySBA3fqV1d"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uENBOEU2ueXET" name="LEAP_YEAR_ARRAY" comment="an array which stores all the values of days each month for leap years&#13;" visibility="private" ownerScope="classifier" type="uPn0DbyoyRTTg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ukx0T5feWi7Pw" name="NON_LEAP_YEAR_ARRAY" comment="an array which stores all the values of days each month non for leap years&#13;" visibility="private" ownerScope="classifier" type="uPn0DbyoyRTTg"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ujaSbnBZGZ6nK" name="DateTime" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uAGR0Kh9jSunZ" name="startSecond" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="usmE2YBs4V9fk" name="startMinute" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u2Hs9Kf3674p4" name="startHour" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uHOtz45Zene9L" name="startDay" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u1bNDtMP2kYmP" name="startMonth" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u2aG2ktt27FeV" name="startYear" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uHQBKH7suVr11" name="run" comment="@brief This will run the dateTime Class. Each call may result in one increment&#13;&#10;"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u9rTFck8HdHMa" name="countSecond" comment="@brief Counts up by one second&#13;&#10;" visibility="private"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="umNw8DLU8CbKq" name="isLeapYear" comment="@brief Check if the year provided is a leap year. This is needed to check if february is 28 days or 29 days.&#13;&#10;&#10;@param year the year which should be checked&#13;&#10;@return true It is a leap year&#13;&#10;@return false It is no leap year&#13;" visibility="private">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uxY2fuYMaZm1U" type="uGr0jAsUfMaGR" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="usKK1URnOZjlj" name="year" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uBtavFWndsX89" name="getMonthDays" comment="@brief get how many days the current month has. This means Jan = 31, Feb = 28 or 29 and so on&#13;&#10;&#10;@return int&#13;" visibility="private">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uM3cSbLoaI7Kz" type="ueqrIsFIkpRLE" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uTbixawcdQxRJ" name="thisMonth" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uiqQqm1kQbqx8" name="ConsoleHMI">
+        <generalization xmi:type="uml:Generalization" xmi:id="uici4mUg1xR8y" general="uWaj7uxNthXaP"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="u7Az4Tv7bFfsc" general="uWaj7uxNthXaP"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uU4xNBjBgBsDP" name="runNumber" comment="how often should increment be run&#13;" visibility="private" type="uTg8bEbHd9ymz"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u7oft9ziL3g9Y" name="ConsoleHMI" visibility="private" stereotype="constructor"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uYdT2YX2edwgf" name="ConsoleHMI" comment="@brief Deleted Copy Constructor. Singleton should not be able to be copied&#13;&#10;" visibility="private" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ulVFZkISOQdKt" name="" visibility="private" type="uWeDC1MIV7zvU" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uzlVqO2FFHcVq" name="operator =" comment="@brief Delete assignment operator (for Singleton)&#13;&#10;" visibility="private">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uz2khGJ7y08nz" name="" visibility="private" type="uWeDC1MIV7zvU" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="un9yKXdG1CPsr" name="getInstance" ownerScope="classifier">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uYcrLAre5sUpX" type="uSo7sIFp7mfeu" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uHikriAKaNoxd" name="showDate" comment="@brief Show the date in the console (12.10.2000)&#13;&#10;&#10;@param day value of the date&#13;&#10;@param month value of the month&#13;&#10;@param year value of the year&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uetHSSdmfQjui" name="day" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="upa2AkGXbcIdc" name="month" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uarpaqqpGiABk" name="year" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="utWEADkkM2KOw" name="showTime" comment="@brief Show the Time in the console (12:35:59)&#13;&#10;&#10;@param hour value of the hour&#13;&#10;@param minute value of the minute&#13;&#10;@param second value of the second&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u9HQ7OTxOTmSi" name="hour" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uT7rcwC5FT65d" name="minute" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ulRGEMg14AGu1" name="second" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uINYPJatvNAdk" name="showDateTime" comment="@brief Show the date and time in the console (12.10.2000 - 12:35:59)&#13;&#10;&#10;@param day value of the date&#13;&#10;@param month value of the month&#13;&#10;@param year value of the year&#13;&#10;@param hour value of the hour&#13;&#10;@param minute value of the minute&#13;&#10;@param second value of the second&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uvPClWN401ETf" name="day" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uUN0nHo3UgawH" name="month" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uz1t8VcFPp26q" name="year" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u17RxzhUMQuQt" name="hour" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uN9vattryOcL7" name="minute" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uMyPpUzPVxmnx" name="second" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uH1P3pdAVyJMu" name="checkRun" comment="@brief Should be called in a loop and returns false if min is reached.&#13;&#10;returns true if the time should still run&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uCsG7sTqpInH3" type="uGr0jAsUfMaGR" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ukl5Aq2RoRdSP" name="checkShow" comment="@brief Should be called in a loop and returns false date and time should not be shown.&#13;&#10;returns true if they should be shown.&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uX3vKqS2kd0bZ" type="uGr0jAsUfMaGR" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uWaj7uxNthXaP" name="HMI" isAbstract="true">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uzISPwpEaMaeF" name="showDate" isAbstract="true" comment="@brief Show the date&#10;&#10;@param day value of the date&#10;@param month value of the month&#10;@param year value of the year" isVirtual="true">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uO9oxaTnhRAyx" name="day" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uL9o2NpEHR1ot" name="month" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uj1gjrTHmJl6x" name="year" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uuJUeeRn2uilG" name="showTime" isAbstract="true" comment="@brief Show the Time&#10;&#10;@param hour value of the hour&#10;@param minute value of the minute&#10;@param second value of the second" isVirtual="true">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uG27y13esYWUF" name="hour" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u816oDY5NpjNx" name="minute" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ulL8TebBPMjq6" name="second" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uStXgPVmVBnIq" name="showDateTime" isAbstract="true" comment="@brief Show the date and the time&#10;&#10;@param day value of the date&#10;@param month value of the month&#10;@param year value of the year&#10;@param hour value of the hour&#10;@param minute value of the minute&#10;@param second value of the second" isVirtual="true">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uMcaSnyGHytFm" name="day" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u6fSQ7RXW311w" name="month" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uiZpiOfPN5ezs" name="year" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uQx6MV8UZEiBK" name="hour" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u7omphx0AmtfN" name="minute" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uKXpfkcYPUqXc" name="second" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uwy6fqkiHHDTR" name="checkRun" isAbstract="true" comment="@brief check if the counter should be incremented.&#10;It may be possible that true will be returned but waits for user input till then.&#10;&#10;@return true increment by one and call again&#10;@return false wait and call again" isVirtual="true">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u2FwU4DcLEL5n" type="uGr0jAsUfMaGR" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u8svoPCqYztJc" name="checkShow" isAbstract="true" comment="@brief Check weather to show the time. Returns true if time should be shown.&#10;Return false if it is not the case." isVirtual="true">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uvGieWzvY5LKz" type="uGr0jAsUfMaGR" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uBeUSjYUm3rft" name="getInstance" ownerScope="classifier">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="upDRkxWP5gJoO" type="uVZKjk3PHTi5R" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uN3p1WsgLnAwN" name="Counter">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uFxVVTseAXp78" name="count" comment="Stores the count value of the counter object" visibility="private" type="ueqrIsFIkpRLE"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uqdjWou0B7MNZ" name="Counter" stereotype="explicit constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uYYB8LUQls7yG" name="startCount" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uJviRM2jWTYc5" name="getCount" isVirtual="true">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uZvgmhzzyTHoo" type="ueqrIsFIkpRLE" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uvWOVXbhWOYjT" name="increment" isVirtual="true"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uQ8QzNdKisCRe" name="setCount">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u2QrKGPb716oh" name="newCount" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uSnUV50wMi6a1" name="HardwareHMI">
+        <generalization xmi:type="uml:Generalization" xmi:id="uoDWF9NJMwSid" general="uWaj7uxNthXaP"/>
+        <generalization xmi:type="uml:Generalization" xmi:id="urRA9gOvF5Udo" general="uWaj7uxNthXaP"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uKROOOFVKFauP" name="gpioA" comment="stores the gpio object of gpio port A&#13;" visibility="private" type="uriYC7RFB9UVN"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uvxqcBnZowbKg" name="gpioB" comment="stores the gpio object of gpio port B&#13;" visibility="private" type="uriYC7RFB9UVN"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uLwCmtO34KBxV" name="isRunning" comment="boolean that stores weather the app is running or is stopped&#13;" visibility="private" type="uGr0jAsUfMaGR"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ubSEFLT6zwDCP" name="LED_1_A" visibility="private" ownerScope="classifier" type="ulI00WhGyV6uE"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ufqSAsRYu8AUw" name="LED_2_A" visibility="private" ownerScope="classifier" type="ulI00WhGyV6uE"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uL2tS1pe684UL" name="LED_3_A" visibility="private" ownerScope="classifier" type="ulI00WhGyV6uE"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uLgjjhhZxECPd" name="LED_4_B" visibility="private" ownerScope="classifier" type="ulI00WhGyV6uE"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ukwJklE5dB7sA" name="SW_1_B" visibility="private" ownerScope="classifier" type="ulI00WhGyV6uE"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ulFIMBAa3Lp91" name="SW_2_B" visibility="private" ownerScope="classifier" type="ulI00WhGyV6uE"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="umRKFwp3PWgjt" name="GPIOA_ADDRESS" visibility="private" ownerScope="classifier" type="ulRySBA3fqV1d"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uU8CfIklur85d" name="GPIOB_ADDRESS" visibility="private" ownerScope="classifier" type="ulRySBA3fqV1d"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uRwS97T7ZI60W" name="HardwareHMI" comment="@brief Construct a HMI that displays on the STM32 Ports as Singleton&#13;&#10;&#10;LED 1 (red) is D7 / PA8&#13;&#10;LED 2 (yellow) is D8 / PA9&#13;&#10;LED 3 (green) is D2 / PA10&#13;&#10;LED 4 (blue) is D3 / PB3&#13;&#10;SWITCH 1 is D4 / PB5&#13;&#10;SWITCH 2 is D6 / PB6&#13;" visibility="private" stereotype="constructor"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uXQmkx6P0kC0T" name="HardwareHMI" comment="@brief Deleted Copy Constructor. Singleton should not be able to be copied&#13;&#10;" visibility="private" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uidrL0utgOCPG" name="" visibility="private" type="ueYyi2YfyrXGk" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uZsDxk8TKqgVj" name="operator =" comment="@brief Delete assignment operator (for Singleton)&#13;&#10;" visibility="private">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uAPKkj5Cgi3Pr" name="" visibility="private" type="ueYyi2YfyrXGk" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ub8F9sPOpA5eM" name="setupHardware" comment="@brief This will setup the Hardware with output/input, pull up/down, gpio speed&#13;&#10;&#10;LED 1 (red) is D7 / PA8&#13;&#10;LED 2 (yellow) is D8 / PA9&#13;&#10;LED 3 (green) is D2 / PA10&#13;&#10;LED 4 (blue) is D3 / PB3&#13;&#10;SWITCH 1 is D4 / PB5&#13;&#10;SWITCH 2 is D6 / PB6&#13;" visibility="private"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uENSabT6zoZcf" name="setLEDs" comment="@brief Set the four LEDs with four boolean&#13;&#10;&#10;@param led_1 led on = true; led off = false&#13;&#10;@param led_2 led on = true; led off = false&#13;&#10;@param led_3 led on = true; led off = false&#13;&#10;@param led_4 led on = true; led off = false&#13;" visibility="private">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uSewq9VzcI3aX" name="led_1" visibility="private" type="uGr0jAsUfMaGR" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uxXUAj7Ivk76I" name="led_2" visibility="private" type="uGr0jAsUfMaGR" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u1BUtYgKCtKM2" name="led_3" visibility="private" type="uGr0jAsUfMaGR" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uXCqEwX4DkN2r" name="led_4" visibility="private" type="uGr0jAsUfMaGR" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ujP5FjDyvqoU4" name="sleep" comment="@brief sleep till a counter has counted up&#13;&#10;" visibility="private"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uD2BiIU9I0CfY" name="sleepLong" comment="@brief sleep for a long time&#13;&#10;" visibility="private"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uzi0jLlw8lQmD" name="showNumber" visibility="private">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uY5pfsDVPiQxt" name="number" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uKHb5hdNNbI3k" name="getInstance" ownerScope="classifier">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ufcqSq4n4iN6R" type="uHVGqIH8pTBjl" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uJCiS5ZVkPSEP" name="showDate" comment="@brief Show the date on the hardware&#13;&#10;This will show&#13;&#10;1 0 1 0 (separation),&#13;&#10;0 1 0 1 (separation),&#13;&#10;1 0 1 0 (separation)&#13;&#10;day tens,&#13;&#10;day ones,&#13;&#10;1 0 1 0 (separation),&#13;&#10;0 1 0 1 (separation),&#13;&#10;1 0 1 0 (separation)&#13;&#10;month tens,&#13;&#10;month ones,&#13;&#10;1 0 1 0 (separation),&#13;&#10;0 1 0 1 (separation),&#13;&#10;1 0 1 0 (separation)&#13;&#10;year thousands,&#13;&#10;year hundreds,&#13;&#10;year tens,&#13;&#10;year ones,&#13;&#10;1 0 1 0 (separation),&#13;&#10;0 1 0 1 (separation),&#13;&#10;1 0 1 0 (separation)&#13;&#10;&#10;@param day value of the date&#13;&#10;@param month value of the month&#13;&#10;@param year value of the year&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uOA91HnN6uQ0d" name="day" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uvmSln1BZuUJV" name="month" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uhAGPaiZGHzjh" name="year" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uDkGQCnzKOvih" name="showTime" comment="@brief Show the time on the hardware&#13;&#10;This will show&#13;&#10;1 0 1 0 (separation),&#13;&#10;0 1 0 1 (separation),&#13;&#10;1 0 1 0 (separation)&#13;&#10;hour tens,&#13;&#10;hour ones,&#13;&#10;1 0 1 0 (separation),&#13;&#10;0 1 0 1 (separation),&#13;&#10;1 0 1 0 (separation)&#13;&#10;minute tens,&#13;&#10;minute ones,&#13;&#10;1 0 1 0 (separation),&#13;&#10;0 1 0 1 (separation),&#13;&#10;1 0 1 0 (separation)&#13;&#10;second tens,&#13;&#10;second ones,&#13;&#10;1 0 1 0 (separation),&#13;&#10;0 1 0 1 (separation),&#13;&#10;1 0 1 0 (separation)&#13;&#10;&#10;@param hour value of the hour&#13;&#10;@param minute value of the minute&#13;&#10;@param second value of the second&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="urL1EA8YNIoWC" name="hour" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uWb0sLqEWx8Kd" name="minute" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u0snlrg6Ht9h2" name="second" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uj0aaqXEI1yHj" name="showDateTime" comment="@brief Show the date and time on the hardware&#13;&#10;&#10;@param day value of the date&#13;&#10;@param month value of the month&#13;&#10;@param year value of the year&#13;&#10;@param hour value of the hour&#13;&#10;@param minute value of the minute&#13;&#10;@param second value of the second&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u6KziGCouynYu" name="day" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u01RevSUPZ42x" name="month" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uuuymi2ctCvp0" name="year" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ubnwJpMniKKCl" name="hour" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ubwRYm1NCmWVz" name="minute" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uYZgkLeZpybh0" name="second" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="usU6ipI8enMUr" name="checkRun" comment="@brief Check if the run button is pressed. Return True if this is the case&#13;&#10;Return false if it is not the case.&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uP6RqwaUGwUWh" type="uGr0jAsUfMaGR" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uEposT9wcuARD" name="checkShow" comment="@brief Check if the show button is pressed. Return True if this is the case&#13;&#10;Return false if it is not the case.&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u9WtBsGQGRLE0" type="uGr0jAsUfMaGR" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uriYC7RFB9UVN" name="StmGpio">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uXUpSRJOHShn6" name="uRCCAHB1ENRRegister" comment="GPio-ClockRegister vgl. Datenblatt STM32F4xx_RM.pdf&#13;&#10;(! RCC AHB1 peripheral clock enable register (RCC_AHB1ENR)&#13;)" visibility="private" type="un3JHsuH1fT6h"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uweAVfHnnQYGU" name="uModeRegister" comment="Deklaratioin der GPIO-Port Register vgl. Datenblatt STM32F4xx_RM.pdf&#13;&#10;(! GPIO port X mode register&#13;)" visibility="private" type="un3JHsuH1fT6h"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uwuS9Nel2vpHa" name="uOutPutTypeRegister" comment="! GPIO port X output type register&#13;" visibility="private" type="un3JHsuH1fT6h"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u1MXzkABKZlTC" name="uOutPutSpeedRegister" comment="! GPIO port X output speed register&#13;" visibility="private" type="un3JHsuH1fT6h"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uvc41Q1CKKNq6" name="uPullUpPullDownRegister" comment="! GPIO port X pull-up/pull-down register&#13;" visibility="private" type="un3JHsuH1fT6h"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u4Uc58vWnevud" name="uInPutRegister" comment="! GPIO port X input data register&#13;" visibility="private" type="uyeHEMDW9au0F"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u7sRG7GqpLt2u" name="uOutPutDataRegister" comment="! GPIO port X output data register&#13;" visibility="private" type="un3JHsuH1fT6h"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uLnIha7Gd6VWS" name="uBitResetRegister" comment="! GPIO port X bit set/reset low register&#13;" visibility="private" type="uJs7lvSaNX1Kv"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="ue3dcLtRQKDr9" name="uBitSetRegister" comment="! GPIO port X bit set/reset highe register&#13;" visibility="private" type="uJs7lvSaNX1Kv"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uhHTTrNAvsUjN" name="m_GPIOBaseRegisterAddr" comment="Merker&#13;&#10;(! Merker fuer die Basisadresse&#13;)" visibility="private" type="ulRySBA3fqV1d"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uQ1HzIf5vrMlY" name="m_RegisterOffset" comment="! Merker fuer den Offset, ueber diese beiden Attribute kann der richtige GPIO-Clock aktiviert werden&#13;" visibility="private" type="ulRySBA3fqV1d"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uWw2iBXqagwGa" name="EnableGPIOClock" comment="StmGpio(); //!der Standardkonstruktor wird verboten&#13;" visibility="private"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ujx4hj4VME95E" name="StmGpio" comment="als uebergabeparameter gilt die Basis-Adresse fuer den entsprechenden Port --&gt; vgl. GPIO_PX_CRTL-Registeraddresse&#13;" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ud7uezYEbD3mj" name="uPortCtrAddr" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uIqzVza14hBkm" name="SetPinMode" comment="Todo: private setzen!!!&#13;&#10;((/*unsigned int  uiPin, GPIO_Mode_TypeDef eMode, int uOut=">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u16ulw6ET6Bxi" name="uPin" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u88kj85qxrYNQ" name="mode" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uTwCoS4kvYILs" name="SetOTyp" comment="unsigned char oType=0); //default type is push-pull, otherwise 1 = Output open drain&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ulGJN0UaucwkK" name="uPin" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uWy9y6YT2yqEL" name="pushpull" visibility="private" type="uGr0jAsUfMaGR" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uLZ5ruUVrgJVa" name="SetOSpeed">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uLyU1mJJun0Qv" name="uPin" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uIQQIR2OgqWzp" name="mode" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uGcsMiCqfMuHI" name="SetPullUpPullDown" comment="defautl is push-pull&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u08H3h9gKE49N" name="uPin" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uGIFVoWrVm7Cx" name="mode" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uMfa3D65zVlcj" name="GetPinOutSetting">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uBUHv0N1nJUlt" type="ux4RKzvFZLXB5" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uMwnBn6SXAx3H" name="uiPin" visibility="private" type="ux4RKzvFZLXB5" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uaidjgeWCtdod" name="SetStandardOutPut">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uBorXw4ArlW4y" name="uiPin" visibility="private" type="ux4RKzvFZLXB5" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uNtmWv0jmS4iH" name="SetStandardInPut">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uQyYp97RdV6tR" name="uiPin" visibility="private" type="ux4RKzvFZLXB5" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uNtJfVsZbJTNJ" name="ReadPin" comment="Parameter PinNr --&gt; siehe Datenblatt&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uKGXgVUH5nz0X" type="uUQaxy2hOqXQX" direction="return"/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uVLgSpkWpfMhk" name="uPin" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uM7vpfFuOSb4I" name="ClearPin" comment="Parameter PinNr --&gt; siehe Datenblatt&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uFdg6NfTrdDEu" name="uPin" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uIp7cZz1A8DRJ" name="SetPin" comment="Parameter PinNr --&gt; siehe Datenblatt&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uYgmatRp45bte" name="uPin" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uAOqxbnZYutIP" name="TogglePin" comment="Parameter PinNr --&gt; siehe Datenblatt&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uBTNxkKlN2usa" name="uPin" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uqpKotWIcDFmj" name="SetPinViaOutPutRegister" comment="new&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uzFQl8v0hlg6K" name="val" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uoO78qpfUkHH0" name="uPin" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uW3zLI71u3Mac" name="ReadPort" comment="lese den gesamten Port&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uSJkRxvuiFBHP" type="uUQaxy2hOqXQX" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ubprsrvg21DHJ" name="GetDOut" comment="Liest den aktuellen Zustand des Dout-Registers&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uvfKJALnb5kaE" type="uUQaxy2hOqXQX" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uchaPv8f1Jjaw" name="WritePort" comment="schreibe auf gesamten Port&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="ueVtXTte97HcM" name="uData" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uit5UiCIp8axZ" name="TogglePort" comment="Parameter uiPin bin?rcodiert die Pins die getoggelt werden sollen&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u80jYtCWXXBwQ" name="uPinMask" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uQwVgcyl74mH9" name="ClearPort" comment="in uPinMask werden die Pins eingetragen, die geloescht werden sollen&#13;">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="udL4hgCd7XZHA" name="uPinMask" visibility="private" type="uUQaxy2hOqXQX" value=""/>
+        </ownedOperation>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="uRmd1jUlFOV8y" name="GPIO_MASK" stereotype="enum">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="uVlhcsVebfe2e" name="ePORT_MASK" value="0xFFFFUL"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uqgSfHK3BSG5D" name="int32_t"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="ufr6CWBcRXFDq" name="OffsetCounter">
+        <generalization xmi:type="uml:Generalization" xmi:id="uXyZlHRSPPF3L" general="uVdzY2PRwFAkm"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uHxatciMx3sJF" name="startCountingAt" comment="Here the counter will start to count after reaching it's maximum value" visibility="private" type="ueqrIsFIkpRLE"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uUA9OhfrlalQT" name="stopCountingAt" comment="Here the counter will stop to count and reset when incrementing again while having this value" visibility="private" type="ueqrIsFIkpRLE"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uiIER4SBSMrCB" name="OffsetCounter" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u0z4lkZtqH1FZ" name="nextCounter" visibility="private" type="uIdxqmfjvSXmu" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uBAD5o9ucFiTi" name="startValue" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uMVRb95hZDJAC" name="startCountingAt" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u54hmaesA081B" name="stopCountingAt" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ubBINyAdZcFlx" name="getCount">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uzILjCQ0U2dWh" type="ueqrIsFIkpRLE" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uQgiv9ofXlvKl" name="setStopCountingAt">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="u8oWC6lWqp4N3" name="newStopCountingAt" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uKDbfDG5K5Ki0" name="getStopCountingAt">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uLqGO6Y8epaA3" type="ueqrIsFIkpRLE" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u3hQoJfFQagZA" name="setCount">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uom0lNhQw0IkW" name="newCount" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uVdzY2PRwFAkm" name="ModuloCounter">
+        <generalization xmi:type="uml:Generalization" xmi:id="uj0aHkmPTDIfj" general="uN3p1WsgLnAwN"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uYIzZwBX2QR1z" name="nextCounter" comment="Stores the adress of the next modulo counter. This counter is incremented if modulo value is reached" visibility="private" type="uIdxqmfjvSXmu"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uzXeMgkvitm99" name="moduloValue" comment="Stores the value at which the next counter is called and this counter is reset" visibility="private" type="ueqrIsFIkpRLE"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ubrZaYC7sULZ4" name="ModuloCounter" stereotype="constructor">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="utsUoBn5ueDOE" name="nextModuloCounter" visibility="private" type="uIdxqmfjvSXmu" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uyD0Xn9HkgwbP" name="startValue" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="umQVwMojp4hh4" name="moduloValue" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uE4MVZxffOSAk" name="increment" comment="@brief Increments the counter and resets to zero when reaching the modulo value&#10;" isVirtual="true"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u4nYpPVhJjwru" name="setModuloValue">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uHI2ikbl00rIy" name="newValue" visibility="private" type="ueqrIsFIkpRLE" value=""/>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uW4S6p2EmRLyu" name="getModuloValue">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="uAjwQFnx6E9LN" type="ueqrIsFIkpRLE" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uMuDQB8ALxQFy" name="uint32_t"/>
+      <xmi:Extension extender="umbrello">
+        <diagrams resolution="192">
+          <diagram xmi.id="u9qKpv31GzI3B" name="class diagram" type="1" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showdocumentation="0" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="152.087" canvasheight="800" canvaswidth="1100" isopen="0">
+            <widgets/>
+            <messages/>
+            <associations/>
+          </diagram>
+          <diagram xmi.id="uLLBMCfC8m0LB" name="CounterSequence" type="3" documentation="" backgroundcolor="#ffffff" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showdocumentation="0" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="113.85" canvasheight="800" canvaswidth="1100" isopen="1" autoincrementsequence="0">
+            <widgets>
+              <floatingtext xmi.id="uiHy0HMOfWqbO" localid="uEaJxTXg32iQ2" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="723.759" y="523.496" width="128" height="29" isinstance="0" showstereotype="2" text="[count&gt;=24]" pretext="" posttext="" role="700"/>
+              <floatingtext xmi.id="uiHy0HMOfWqbO" localid="udG885IGk3kzN" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="498.024" y="490.997" width="128" height="29" isinstance="0" showstereotype="2" text="[count&gt;=60]" pretext="" posttext="" role="700"/>
+              <floatingtext xmi.id="uiHy0HMOfWqbO" localid="u4UeTxTqONOXc" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1191.04" y="490.997" width="128" height="29" isinstance="0" showstereotype="2" text="[count&gt;=12]" pretext="" posttext="" role="700"/>
+              <floatingtext xmi.id="uiHy0HMOfWqbO" localid="uWUZeZYs35At9" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="893.28" y="492.753" width="249" height="29" isinstance="0" showstereotype="2" text="[count&gt;=stopCountingAt]" pretext="" posttext="" role="700"/>
+              <floatingtext xmi.id="uiHy0HMOfWqbO" localid="uLFgOipqQtnrG" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="720.246" y="490.997" width="128" height="29" isinstance="0" showstereotype="2" text="[count&gt;=24]" pretext="" posttext="" role="700"/>
+              <floatingtext xmi.id="uiHy0HMOfWqbO" localid="uYruMrXTIceiQ" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="129.118" y="490.997" width="128" height="29" isinstance="0" showstereotype="2" text="[count&gt;=60]" pretext="" posttext="" role="700"/>
+              <objectwidget xmi.id="uN3p1WsgLnAwN" localid="uVxZH6hzq9KiP" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.9,-1,5,50,0,0,0,0,0,Standard" autoresize="1" x="1352.05" y="396.446" width="147" height="35" isinstance="0" instancename="Year" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="uTDzxns4euUsX" localid="uK3ne8Z1NAxGz" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.9,-1,5,50,0,0,0,0,0,Standard" autoresize="1" x="-372.464" y="80" width="207" height="35" isinstance="0" instancename="dateTime" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="ufr6CWBcRXFDq" localid="uuNwXNftjYZPE" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.9,-1,5,50,0,0,0,0,0,Standard" autoresize="1" x="838.34" y="295.937" width="196" height="35" isinstance="0" instancename="Day" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="uVdzY2PRwFAkm" localid="u1s0waOHLVVLB" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.9,-1,5,50,0,0,0,0,0,Standard" autoresize="1" x="6.64697" y="129.53" width="240" height="35" isinstance="0" instancename="Second" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="ufr6CWBcRXFDq" localid="uzplvwf9AXOg0" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.9,-1,5,50,0,0,0,0,0,Standard" autoresize="1" x="1082.65" y="347.564" width="219" height="35" isinstance="0" instancename="Month" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="uVdzY2PRwFAkm" localid="uOxBHVFttEdyX" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.9,-1,5,50,0,0,0,0,0,Standard" autoresize="1" x="380.808" y="186.52" width="235" height="35" isinstance="0" instancename="Minute" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+              <objectwidget xmi.id="uVdzY2PRwFAkm" localid="uv9aVMrDRnUWI" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.9,-1,5,50,0,0,0,0,0,Standard" autoresize="1" x="608.74" y="254.904" width="217" height="35" isinstance="0" instancename="Hour" showstereotype="2" drawasactor="0" multipleinstance="0" decon="0"/>
+              <boxwidget xmi.id="uepG7wrehdYgG" localid="uj84uFoubdDuy" textcolor="#000000" linecolor="#000000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="0" x="702.679" y="521.739" width="215.942" height="190.672" isinstance="0" showstereotype="2"/>
+              <boxwidget xmi.id="uICSWj6yQSuFI" localid="upA9CQeZumclF" textcolor="#000000" linecolor="#000000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="0" x="1176.11" y="520.861" width="233.509" height="193.307" isinstance="0" showstereotype="2"/>
+              <boxwidget xmi.id="uepG7wrehdYgG" localid="u2XcFJUZyWFQR" textcolor="#000000" linecolor="#000000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="0" x="483.092" y="520.861" width="215.942" height="190.672" isinstance="0" showstereotype="2"/>
+              <boxwidget xmi.id="uepG7wrehdYgG" localid="uZwS0zugVcfBG" textcolor="#000000" linecolor="#000000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="0" x="924.901" y="520.861" width="243.171" height="191.55" isinstance="0" showstereotype="2"/>
+              <boxwidget xmi.id="uepG7wrehdYgG" localid="uIj4ScXY7rY7N" textcolor="#000000" linecolor="#000000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="0" x="110.672" y="520.861" width="365.261" height="192.429" isinstance="0" showstereotype="2"/>
+            </widgets>
+            <messages>
+              <messagewidget xmi.id="uqdjWou0B7MNZ" localid="usHXqQXbNmZYB" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-267" y="413.946" width="1618" height="8" isinstance="0" showstereotype="2" seqnum="" widgetaid="uK3ne8Z1NAxGz" widgetbid="uVxZH6hzq9KiP" operation="uqdjWou0B7MNZ" sequencemessagetype="1002" textid="uacFHNT7nJrZc">
+                <floatingtext xmi.id="uacFHNT7nJrZc" localid="uGZxv1mdeHOeA" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="105" y="384" width="240" height="29" isinstance="0" showstereotype="2" text="Counter(startCount : int)" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="uE4MVZxffOSAk" localid="uvzHhTiMNy2Ax" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="126" y="550.392" width="380" height="30" isinstance="0" showstereotype="2" seqnum="" widgetaid="u1s0waOHLVVLB" widgetbid="uOxBHVFttEdyX" operation="uE4MVZxffOSAk" sequencemessagetype="1000" textid="uV0wOd7FcUK36">
+                <floatingtext xmi.id="uV0wOd7FcUK36" localid="uon6kZxccrldH" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="269" y="521" width="118" height="29" isinstance="0" showstereotype="2" text="increment()" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="uE4MVZxffOSAk" localid="uMAGyjyR2uAxR" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="717" y="553.365" width="227" height="30" isinstance="0" showstereotype="2" seqnum="" widgetaid="uv9aVMrDRnUWI" widgetbid="uuNwXNftjYZPE" operation="uE4MVZxffOSAk" sequencemessagetype="1000" textid="ucLHDLkNYh8Qb">
+                <floatingtext xmi.id="ucLHDLkNYh8Qb" localid="u1He5pjPEFhRW" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="813" y="524" width="118" height="29" isinstance="0" showstereotype="2" text="increment()" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="uE4MVZxffOSAk" localid="u3ZsCIftYNcZB" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="498" y="550.122" width="227" height="30" isinstance="0" showstereotype="2" seqnum="" widgetaid="uOxBHVFttEdyX" widgetbid="uv9aVMrDRnUWI" operation="uE4MVZxffOSAk" sequencemessagetype="1000" textid="utC9yTDbvYdLb">
+                <floatingtext xmi.id="utC9yTDbvYdLb" localid="uTQWmp1FzJ2E8" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="589" y="521" width="118" height="29" isinstance="0" showstereotype="2" text="increment()" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="uiIER4SBSMrCB" localid="uD7lkzSTy9yRT" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-267" y="313.437" width="1104" height="8" isinstance="0" showstereotype="2" seqnum="" widgetaid="uK3ne8Z1NAxGz" widgetbid="uuNwXNftjYZPE" operation="uiIER4SBSMrCB" sequencemessagetype="1002" textid="uCDwr0rANWHc0">
+                <floatingtext xmi.id="uCDwr0rANWHc0" localid="uvvMSt8Q60fDH" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-169" y="284" width="931" height="29" isinstance="0" showstereotype="2" text="OffsetCounter(nextCounter : Counter*, startValue : int, startCountingAt : int, stopCountingAt : int)" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="uE4MVZxffOSAk" localid="uVxU4feWMBEMp" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-268" y="548.209" width="402" height="30" isinstance="0" showstereotype="2" seqnum="" widgetaid="uK3ne8Z1NAxGz" widgetbid="u1s0waOHLVVLB" operation="uE4MVZxffOSAk" sequencemessagetype="1000" textid="u2z6aOfj05QoM">
+                <floatingtext xmi.id="u2z6aOfj05QoM" localid="uJG2CpVNeuBWN" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-205" y="519" width="118" height="29" isinstance="0" showstereotype="2" text="increment()" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="ubrZaYC7sULZ4" localid="uMLDBt2HdBa8r" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-267" y="204.02" width="646" height="8" isinstance="0" showstereotype="2" seqnum="" widgetaid="uK3ne8Z1NAxGz" widgetbid="uOxBHVFttEdyX" operation="ubrZaYC7sULZ4" sequencemessagetype="1002" textid="uN0meK14KmrCK">
+                <floatingtext xmi.id="uN0meK14KmrCK" localid="u16Xs56au8G0o" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-262" y="175" width="783" height="29" isinstance="0" showstereotype="2" text="ModuloCounter(nextModuloCounter : Counter*, startValue : int, moduloValue : int)" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="uiIER4SBSMrCB" localid="uPvYDvqtuC7of" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-267" y="365.064" width="1348" height="8" isinstance="0" showstereotype="2" seqnum="" widgetaid="uK3ne8Z1NAxGz" widgetbid="uzplvwf9AXOg0" operation="uiIER4SBSMrCB" sequencemessagetype="1002" textid="umwfSLaFRWpER">
+                <floatingtext xmi.id="umwfSLaFRWpER" localid="uQYlEhccHexcH" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-171" y="336" width="931" height="29" isinstance="0" showstereotype="2" text="OffsetCounter(nextCounter : Counter*, startValue : int, startCountingAt : int, stopCountingAt : int)" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="ubrZaYC7sULZ4" localid="uPq7KRpNwoNXH" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.9,-1,5,50,0,0,0,0,0,Standard" autoresize="1" x="-267" y="272.404" width="874" height="8" isinstance="0" showstereotype="2" seqnum="" widgetaid="uK3ne8Z1NAxGz" widgetbid="uv9aVMrDRnUWI" operation="ubrZaYC7sULZ4" sequencemessagetype="1002" textid="ukTyt3fdsn6r0">
+                <floatingtext xmi.id="ukTyt3fdsn6r0" localid="up2YrpAUjUXSr" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-220" y="243" width="783" height="29" isinstance="0" showstereotype="2" text="ModuloCounter(nextModuloCounter : Counter*, startValue : int, moduloValue : int)" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="uqdjWou0B7MNZ" localid="unPSEEzONmsNa" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-267" y="147.03" width="272" height="8" isinstance="0" showstereotype="2" seqnum="" widgetaid="uK3ne8Z1NAxGz" widgetbid="u1s0waOHLVVLB" operation="uqdjWou0B7MNZ" sequencemessagetype="1002" textid="ulNpIMH3BLV3q">
+                <floatingtext xmi.id="ulNpIMH3BLV3q" localid="uAjPoa0UD2iQr" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-220" y="118" width="240" height="29" isinstance="0" showstereotype="2" text="Counter(startCount : int)" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="u3hQoJfFQagZA" localid="usNpmUOUTj9cF" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="934" y="640.309" width="50" height="30" isinstance="0" showstereotype="2" seqnum="" widgetaid="uuNwXNftjYZPE" widgetbid="uuNwXNftjYZPE" operation="u3hQoJfFQagZA" sequencemessagetype="1000" textid="uvRVbkICaZkmb">
+                <floatingtext xmi.id="uvRVbkICaZkmb" localid="uNtm5hWA3tjnX" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="939" y="611" width="245" height="29" isinstance="0" showstereotype="2" text="setCount(newCount : int)" pretext="" posttext="" role="705"/>
+              </messagewidget>
+              <messagewidget xmi.id="uvWOVXbhWOYjT" localid="u7cnXKCTlMDBv" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1192" y="550.243" width="241" height="30" isinstance="0" showstereotype="2" seqnum="" widgetaid="uzplvwf9AXOg0" widgetbid="uVxZH6hzq9KiP" operation="uvWOVXbhWOYjT" sequencemessagetype="1000" textid="uvfn7UOdoTaZR">
+                <floatingtext xmi.id="uvfn7UOdoTaZR" localid="umGovIGkQym8c" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1302" y="521" width="118" height="29" isinstance="0" showstereotype="2" text="increment()" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="uQ8QzNdKisCRe" localid="uoINHbckpJu2I" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="715" y="643.674" width="50" height="30" isinstance="0" showstereotype="2" seqnum="" widgetaid="uv9aVMrDRnUWI" widgetbid="uv9aVMrDRnUWI" operation="uQ8QzNdKisCRe" sequencemessagetype="1000" textid="urjNyay0Emldy">
+                <floatingtext xmi.id="urjNyay0Emldy" localid="udIi547BfjgAx" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="720" y="614" width="245" height="29" isinstance="0" showstereotype="2" text="setCount(newCount : int)" pretext="" posttext="" role="705"/>
+              </messagewidget>
+              <messagewidget xmi.id="uQ8QzNdKisCRe" localid="uATIHZ0ncyayv" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="496" y="656.241" width="50" height="30" isinstance="0" showstereotype="2" seqnum="" widgetaid="uOxBHVFttEdyX" widgetbid="uOxBHVFttEdyX" operation="uQ8QzNdKisCRe" sequencemessagetype="1000" textid="uMdUDvI0pua7c">
+                <floatingtext xmi.id="uMdUDvI0pua7c" localid="uvNcdWf0Nqego" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="501" y="627" width="245" height="29" isinstance="0" showstereotype="2" text="setCount(newCount : int)" pretext="" posttext="" role="705"/>
+              </messagewidget>
+              <messagewidget xmi.id="uQ8QzNdKisCRe" localid="ucHZxRbBVYXC5" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="124" y="649.713" width="50" height="30" isinstance="0" showstereotype="2" seqnum="" widgetaid="u1s0waOHLVVLB" widgetbid="u1s0waOHLVVLB" operation="uQ8QzNdKisCRe" sequencemessagetype="1000" textid="u7ZOxwKZDreAr">
+                <floatingtext xmi.id="u7ZOxwKZDreAr" localid="umubM09c0l5YM" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="129" y="620" width="245" height="29" isinstance="0" showstereotype="2" text="setCount(newCount : int)" pretext="" posttext="" role="705"/>
+              </messagewidget>
+              <messagewidget xmi.id="u3hQoJfFQagZA" localid="utAZqnKdcaFeN" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1190" y="647.336" width="50" height="30" isinstance="0" showstereotype="2" seqnum="" widgetaid="uzplvwf9AXOg0" widgetbid="uzplvwf9AXOg0" operation="u3hQoJfFQagZA" sequencemessagetype="1000" textid="u5SucyFmCfem7">
+                <floatingtext xmi.id="u5SucyFmCfem7" localid="um5a8kLiWksIr" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1195" y="618" width="245" height="29" isinstance="0" showstereotype="2" text="setCount(newCount : int)" pretext="" posttext="" role="705"/>
+              </messagewidget>
+              <messagewidget xmi.id="uE4MVZxffOSAk" localid="uYNj5S3N3FyEk" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="936" y="549.487" width="264" height="30" isinstance="0" showstereotype="2" seqnum="" widgetaid="uuNwXNftjYZPE" widgetbid="uzplvwf9AXOg0" operation="uE4MVZxffOSAk" sequencemessagetype="1000" textid="uOQZLn35DnbhQ">
+                <floatingtext xmi.id="uOQZLn35DnbhQ" localid="uNSr1CWrledP1" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="1069" y="520" width="118" height="29" isinstance="0" showstereotype="2" text="increment()" pretext="" posttext="" role="704"/>
+              </messagewidget>
+              <messagewidget xmi.id="uQgiv9ofXlvKl" localid="uNtTeOuVnmW5I" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="-268" y="447.487" width="1212" height="30" isinstance="0" showstereotype="2" seqnum="" widgetaid="uK3ne8Z1NAxGz" widgetbid="uuNwXNftjYZPE" operation="uQgiv9ofXlvKl" sequencemessagetype="1000" textid="uN4YBXyPodBEn">
+                <floatingtext xmi.id="uN4YBXyPodBEn" localid="uQ3JQnV8KDoOM" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.875,-1,5,50,0,0,0,0,0" autoresize="1" x="0" y="418" width="427" height="29" isinstance="0" showstereotype="2" text="setStopCountingAt(newStopCountingAt : int)" pretext="" posttext="" role="704"/>
+              </messagewidget>
+            </messages>
+            <associations/>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use_Case_View" name="Use Case View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component_View" name="Component View">
+      <uml:Package xmi:id="uJqty8t8YSWWo" name="C:/Users/nikla/OneDrive/DHBW/6_Semester/Embedded Systems/Projekt/autogeneratedCode/Time Model" stereotype="folder">
+        <packagedElement xmi:type="uml:Artifact" xmi:id="umxRWsMmmgUqe" name="ConsoleHMI.h" comment=" Project Time Project&#13;&#10; @author Niklas Linsler&#13;&#10; @version 1.0&#13;" drawas="1"/>
+        <packagedElement xmi:type="uml:Artifact" xmi:id="uDo09EvZdFfkz" name="Counter.h" comment=" Project Time Project&#10; @author Niklas Linsler&#10; @version 1.0" drawas="1"/>
+        <packagedElement xmi:type="uml:Artifact" xmi:id="urevRmWsbUY3o" name="DateTime.h" comment=" Project Time Project&#13;&#10; @author Niklas Linsler&#13;&#10; @version 1.0&#13;" drawas="1"/>
+        <packagedElement xmi:type="uml:Artifact" xmi:id="uWIoTEYvHBzVH" name="HardwareHMI.h" comment=" Project Time Project&#13;&#10; @author Niklas Linsler&#13;&#10; @version 1.0&#13;" drawas="1"/>
+        <packagedElement xmi:type="uml:Artifact" xmi:id="uuLFUluA25gSD" name="HMI.h" comment=" Project Time Project&#10; @author Niklas Linsler&#10; @version 1.0" drawas="1"/>
+        <packagedElement xmi:type="uml:Artifact" xmi:id="ualcNRjFqioHD" name="ModuloCounter.h" comment=" Project Time Project&#10; @author Niklas Linsler&#10; @version 1.0" drawas="1"/>
+        <packagedElement xmi:type="uml:Artifact" xmi:id="uOZ2436HORZH1" name="OffsetCounter.h" comment=" Project Time Project&#10; @author Niklas Linsler&#10; @version 1.0" drawas="1"/>
+        <packagedElement xmi:type="uml:Artifact" xmi:id="urBNOmFdWt2EA" name="stm_gpio.h" comment=" @Project  Embedded C++ Kurs ET20B&#13;&#10; @brief    GPIO-Klasse fuer STM32F4xxx&#13;&#10; @file     stm_gpio.h&#13;&#10;&#13;&#10; @Date     2023&#13;&#10;&#13;&#10; Dies ist ein erster Ansatz die GPIO-Funktionalit?t in einer Klasse abzubilden&#13;&#10;&#13;&#10; Diese Klasse ist noch nicht vollst?ndig und dient nur der Uebung. Die Klasse ist fuer einen&#13;&#10; echten Betrieb der GPIO nicht geeignet. Weiter wird noch keine Interruptfunktionalitaet&#13;&#10; unterstuetzt.&#13;&#10; Diese Klasse darf nur innerhalb der Uebungen OOSE/Mikrocomputertechnik3 verwendet werden.&#13;&#10;&#13;&#10; -nicht fuer den Einsatz in echten Projekten verwendbar-&#13;&#10;&#13;&#10; @ToDo&#13;&#10; Es muss Fehlermeldungen fuer die Einzelnen public Methoden geben.&#13;&#10; Die Klasse GPIO arbeitet im Gegensatz zu dem C-File aus der EFM-Lib&#13;&#10; nicht mit Asserts!!!!&#13;&#10; Weitere Konfi.-Moeglichkeiten implementieren siehe Datenblatt STM32F4xx_RM.pdf&#13;&#10; Ausfuehlicher Test&#13;" drawas="1"/>
+      </uml:Package>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment_View" name="Deployment View"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity_Relationship_Model" name="Entity Relationship Model"/>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="uLLBMCfC8m0LB" documentation="" uniqueid="uIj4ScXY7rY7N"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Component_View" type="821" open="1">
+          <listitem id="uJqty8t8YSWWo" type="820" open="0">
+            <listitem id="umxRWsMmmgUqe" type="824" open="0"/>
+            <listitem id="uDo09EvZdFfkz" type="824" open="0"/>
+            <listitem id="urevRmWsbUY3o" type="824" open="0"/>
+            <listitem id="uWIoTEYvHBzVH" type="824" open="0"/>
+            <listitem id="uuLFUluA25gSD" type="824" open="0"/>
+            <listitem id="ualcNRjFqioHD" type="824" open="0"/>
+            <listitem id="uOZ2436HORZH1" type="824" open="0"/>
+            <listitem id="urBNOmFdWt2EA" type="824" open="0"/>
+          </listitem>
+        </listitem>
+        <listitem id="Deployment_View" type="827" open="1"/>
+        <listitem id="Entity_Relationship_Model" type="836" open="1"/>
+        <listitem id="Logical_View" type="801" open="1">
+          <listitem id="u9qKpv31GzI3B" type="807" label="class diagram" open="0"/>
+          <listitem id="uiqQqm1kQbqx8" type="813" open="0">
+            <listitem id="uH1P3pdAVyJMu" type="815" open="0"/>
+            <listitem id="ukl5Aq2RoRdSP" type="815" open="0"/>
+            <listitem id="uYdT2YX2edwgf" type="815" open="0"/>
+            <listitem id="u7oft9ziL3g9Y" type="815" open="0"/>
+            <listitem id="un9yKXdG1CPsr" type="815" open="0"/>
+            <listitem id="uzlVqO2FFHcVq" type="815" open="0"/>
+            <listitem id="uU4xNBjBgBsDP" type="814" open="0"/>
+            <listitem id="uHikriAKaNoxd" type="815" open="0"/>
+            <listitem id="uINYPJatvNAdk" type="815" open="0"/>
+            <listitem id="utWEADkkM2KOw" type="815" open="0"/>
+          </listitem>
+          <listitem id="uN3p1WsgLnAwN" type="813" open="1">
+            <listitem id="uFxVVTseAXp78" type="814" open="0"/>
+            <listitem id="uqdjWou0B7MNZ" type="815" open="0"/>
+            <listitem id="uJviRM2jWTYc5" type="815" open="0"/>
+            <listitem id="uvWOVXbhWOYjT" type="815" open="0"/>
+            <listitem id="uQ8QzNdKisCRe" type="815" open="0"/>
+          </listitem>
+          <listitem id="uLLBMCfC8m0LB" type="810" label="CounterSequence" open="0"/>
+          <listitem id="Datatypes" type="830" open="0"/>
+          <listitem id="uTDzxns4euUsX" type="813" open="0">
+            <listitem id="u9rTFck8HdHMa" type="815" open="0"/>
+            <listitem id="ujaSbnBZGZ6nK" type="815" open="0"/>
+            <listitem id="uGPwOCLbS6x98" type="814" open="0"/>
+            <listitem id="uBtavFWndsX89" type="815" open="0"/>
+            <listitem id="uixyah8BMtMSK" type="814" open="0"/>
+            <listitem id="uYzSDQcmG7qZh" type="814" open="0"/>
+            <listitem id="umNw8DLU8CbKq" type="815" open="0"/>
+            <listitem id="uENBOEU2ueXET" type="814" open="0"/>
+            <listitem id="uW8qE8sfGGC2p" type="814" open="0"/>
+            <listitem id="uPkg198yJwNWH" type="814" open="0"/>
+            <listitem id="ukx0T5feWi7Pw" type="814" open="0"/>
+            <listitem id="uHQBKH7suVr11" type="815" open="0"/>
+            <listitem id="uml2mssXfcjlr" type="814" open="0"/>
+            <listitem id="ufE0hFbtBys6I" type="814" open="0"/>
+            <listitem id="ua3OP6NhBcOq6" type="814" open="0"/>
+            <listitem id="uV8Zld7WK8O61" type="814" open="0"/>
+          </listitem>
+          <listitem id="uSnUV50wMi6a1" type="813" open="0">
+            <listitem id="usU6ipI8enMUr" type="815" open="0"/>
+            <listitem id="uEposT9wcuARD" type="815" open="0"/>
+            <listitem id="uKHb5hdNNbI3k" type="815" open="0"/>
+            <listitem id="uKROOOFVKFauP" type="814" open="0"/>
+            <listitem id="umRKFwp3PWgjt" type="814" open="0"/>
+            <listitem id="uvxqcBnZowbKg" type="814" open="0"/>
+            <listitem id="uU8CfIklur85d" type="814" open="0"/>
+            <listitem id="uXQmkx6P0kC0T" type="815" open="0"/>
+            <listitem id="uRwS97T7ZI60W" type="815" open="0"/>
+            <listitem id="uLwCmtO34KBxV" type="814" open="0"/>
+            <listitem id="ubSEFLT6zwDCP" type="814" open="0"/>
+            <listitem id="ufqSAsRYu8AUw" type="814" open="0"/>
+            <listitem id="uL2tS1pe684UL" type="814" open="0"/>
+            <listitem id="uLgjjhhZxECPd" type="814" open="0"/>
+            <listitem id="uZsDxk8TKqgVj" type="815" open="0"/>
+            <listitem id="uENSabT6zoZcf" type="815" open="0"/>
+            <listitem id="ub8F9sPOpA5eM" type="815" open="0"/>
+            <listitem id="uJCiS5ZVkPSEP" type="815" open="0"/>
+            <listitem id="uj0aaqXEI1yHj" type="815" open="0"/>
+            <listitem id="uzi0jLlw8lQmD" type="815" open="0"/>
+            <listitem id="uDkGQCnzKOvih" type="815" open="0"/>
+            <listitem id="ujP5FjDyvqoU4" type="815" open="0"/>
+            <listitem id="uD2BiIU9I0CfY" type="815" open="0"/>
+            <listitem id="ukwJklE5dB7sA" type="814" open="0"/>
+            <listitem id="ulFIMBAa3Lp91" type="814" open="0"/>
+          </listitem>
+          <listitem id="uWaj7uxNthXaP" type="813" open="0">
+            <listitem id="uwy6fqkiHHDTR" type="815" open="0"/>
+            <listitem id="u8svoPCqYztJc" type="815" open="0"/>
+            <listitem id="uBeUSjYUm3rft" type="815" open="0"/>
+            <listitem id="uzISPwpEaMaeF" type="815" open="0"/>
+            <listitem id="uStXgPVmVBnIq" type="815" open="0"/>
+            <listitem id="uuJUeeRn2uilG" type="815" open="0"/>
+          </listitem>
+          <listitem id="uqgSfHK3BSG5D" type="813" open="0"/>
+          <listitem id="uVdzY2PRwFAkm" type="813" open="1">
+            <listitem id="uW4S6p2EmRLyu" type="815" open="0"/>
+            <listitem id="uE4MVZxffOSAk" type="815" open="0"/>
+            <listitem id="ubrZaYC7sULZ4" type="815" open="0"/>
+            <listitem id="uzXeMgkvitm99" type="814" open="0"/>
+            <listitem id="uYIzZwBX2QR1z" type="814" open="0"/>
+            <listitem id="u4nYpPVhJjwru" type="815" open="0"/>
+          </listitem>
+          <listitem id="ufr6CWBcRXFDq" type="813" open="1">
+            <listitem id="ubBINyAdZcFlx" type="815" open="0"/>
+            <listitem id="uKDbfDG5K5Ki0" type="815" open="0"/>
+            <listitem id="uiIER4SBSMrCB" type="815" open="0"/>
+            <listitem id="u3hQoJfFQagZA" type="815" open="0"/>
+            <listitem id="uQgiv9ofXlvKl" type="815" open="0"/>
+            <listitem id="uHxatciMx3sJF" type="814" open="0"/>
+            <listitem id="uUA9OhfrlalQT" type="814" open="0"/>
+          </listitem>
+          <listitem id="uriYC7RFB9UVN" type="813" open="0">
+            <listitem id="uM7vpfFuOSb4I" type="815" open="0"/>
+            <listitem id="uQwVgcyl74mH9" type="815" open="0"/>
+            <listitem id="uWw2iBXqagwGa" type="815" open="0"/>
+            <listitem id="ubprsrvg21DHJ" type="815" open="0"/>
+            <listitem id="uMfa3D65zVlcj" type="815" open="0"/>
+            <listitem id="uRmd1jUlFOV8y" type="831" open="0">
+              <listitem id="uVlhcsVebfe2e" type="839" open="0"/>
+            </listitem>
+            <listitem id="uhHTTrNAvsUjN" type="814" open="0"/>
+            <listitem id="uQ1HzIf5vrMlY" type="814" open="0"/>
+            <listitem id="uNtJfVsZbJTNJ" type="815" open="0"/>
+            <listitem id="uW3zLI71u3Mac" type="815" open="0"/>
+            <listitem id="uLZ5ruUVrgJVa" type="815" open="0"/>
+            <listitem id="uTwCoS4kvYILs" type="815" open="0"/>
+            <listitem id="uIp7cZz1A8DRJ" type="815" open="0"/>
+            <listitem id="uIqzVza14hBkm" type="815" open="0"/>
+            <listitem id="uqpKotWIcDFmj" type="815" open="0"/>
+            <listitem id="uGcsMiCqfMuHI" type="815" open="0"/>
+            <listitem id="uNtmWv0jmS4iH" type="815" open="0"/>
+            <listitem id="uaidjgeWCtdod" type="815" open="0"/>
+            <listitem id="ujx4hj4VME95E" type="815" open="0"/>
+            <listitem id="uAOqxbnZYutIP" type="815" open="0"/>
+            <listitem id="uit5UiCIp8axZ" type="815" open="0"/>
+            <listitem id="uLnIha7Gd6VWS" type="814" open="0"/>
+            <listitem id="ue3dcLtRQKDr9" type="814" open="0"/>
+            <listitem id="u4Uc58vWnevud" type="814" open="0"/>
+            <listitem id="uweAVfHnnQYGU" type="814" open="0"/>
+            <listitem id="u7sRG7GqpLt2u" type="814" open="0"/>
+            <listitem id="u1MXzkABKZlTC" type="814" open="0"/>
+            <listitem id="uwuS9Nel2vpHa" type="814" open="0"/>
+            <listitem id="uvc41Q1CKKNq6" type="814" open="0"/>
+            <listitem id="uXUpSRJOHShn6" type="814" open="0"/>
+            <listitem id="uchaPv8f1Jjaw" type="815" open="0"/>
+          </listitem>
+          <listitem id="uMuDQB8ALxQFy" type="813" open="0"/>
+        </listitem>
+        <listitem id="Use_Case_View" type="802" open="1"/>
+      </listitem>
+    </listview>
+    <codegeneration>
+      <codegenerator language="C++"/>
+    </codegeneration>
+  </xmi:Extension>
+</xmi:XMI>

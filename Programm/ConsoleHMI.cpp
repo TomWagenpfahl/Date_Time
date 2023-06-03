@@ -6,21 +6,9 @@
 
 #include "ConsoleHMI.h"
 
-ConsoleHMI *ConsoleHMI::hmi = nullptr;
-
-ConsoleHMI *ConsoleHMI::getInstance()
-{
-    if (hmi == nullptr)
-    {
-        hmi = new ConsoleHMI();
-    }
-
-    return hmi;
-}
-
 void ConsoleHMI::showDate(int day, int month, int year)
 {
-    cout << "Date: "
+    cout << "Datum: "
          << setfill('0') << setw(2) << day << "."
          << setfill('0') << setw(2) << month << "."
          << setfill('0') << setw(2) << year << endl;
@@ -29,7 +17,7 @@ void ConsoleHMI::showDate(int day, int month, int year)
 
 void ConsoleHMI::showTime(int hour, int minute, int second)
 {
-    cout << "Time: "
+    cout << "Uhrzeit: "
          << setfill('0') << setw(2) << hour << ":"
          << setfill('0') << setw(2) << minute << ":"
          << setfill('0') << setw(2) << second << endl;
@@ -38,7 +26,7 @@ void ConsoleHMI::showTime(int hour, int minute, int second)
 
 void ConsoleHMI::showDateTime(int day, int month, int year, int hour, int minute, int second)
 {
-    cout << "Date and Time: "
+    cout << "Datum und Uhrzeit: "
          << setfill('0') << setw(2) << day << "."
          << setfill('0') << setw(2) << month << "."
          << setfill('0') << setw(4) << year << " - "
@@ -51,33 +39,31 @@ void ConsoleHMI::showDateTime(int day, int month, int year, int hour, int minute
 bool ConsoleHMI::checkRun()
 {
     // Finished Counting
+    // Read in new Value
     if (this->runNumber == 0)
-    {
-        runNumber--;
-        return false;
-    }
-    // Still counting
-    else if (runNumber > 0)
-    {
-        this->runNumber--;
-        return true;
-    }
-    // Read new counting value
-    else
     {
         runNumber = 0;
         while (runNumber <= 0)
         {
             cout << "Wie viele Sekunden soll der Zähler laufen?" << endl;
             cin >> runNumber;
-        }
+                }
 
         if (runNumber > 0)
         {
+            runNumber--;
             return true;
         }
         return false;
     }
+    
+    // Run one step
+    if (runNumber > 0)
+    {
+        runNumber--;
+        return true;
+    }
+    
 }
 
 bool ConsoleHMI::checkShow()
