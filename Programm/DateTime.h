@@ -72,20 +72,39 @@ private:
 	 */
 	int getMonthDays(int thisMonth);
 
-	static HMI &hmi; //! The human machine interface which can either be console or hardware of STM32
+        //! The human machine interface which can either be console or hardware of STM32
+	static HMI &hmi; 
+        
+        //! The year counter object
+	Counter year;	
+        
+	 //! The month counter object
+        OffsetCounter month; 
+        
+        //! The day counter object
+	OffsetCounter day;
+        
+        //! The hour counter object
+	ModuloCounter hour;	  
+        
+        //! The minute counter object
+	ModuloCounter minute; 
+        
+        //! The second counter object
+	ModuloCounter second; 
+        
+         //! counts the seconds to update the date of the month once every month period.
+	uint32_t updateDaysCounter;
+        
 
-	Counter year;		  //! The year counter object
-	OffsetCounter month;  //! The month counter object
-	OffsetCounter day;	  //! The day counter object
-	ModuloCounter hour;	  //! The hour counter object
-	ModuloCounter minute; //! The minute counter object
-	ModuloCounter second; //! The second counter object
-
-	uint32_t updateDaysCounter; // counts the seconds to update the date of the month once every month period.
-
-	static const uint32_t SECONDS_FOR_SMALLEST_MONTH; //! 60s * 60min * 24h * 28days The time that the smallest month could be. This is needed to update the days not every second but every month.
-	static const int LEAP_YEAR_ARRAY[12];			  //! an array which stores all the values of days each month for leap years
-	static const int NON_LEAP_YEAR_ARRAY[12];		  //! an array which stores all the values of days each month non for leap years
+	//! 60s * 60min * 24h * 28days The time that the smallest month could be. This is needed to update the days not every second but every month.
+        static const uint32_t SECONDS_FOR_SMALLEST_MONTH; 
+        
+        //! an array which stores all the values of days each month for leap years
+	static const int LEAP_YEAR_ARRAY[12];	
+        
+        //! an array which stores all the values of days each month non for leap years
+	static const int NON_LEAP_YEAR_ARRAY[12];		  
 };
 
 #endif //_DATETIME_H
