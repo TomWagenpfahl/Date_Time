@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "C:\Users\tomwa\Documents\GitHub\Date_Time\Programm\settings\Datumszaehler.Debug.general.xcl" --backend -f "C:\Users\tomwa\Documents\GitHub\Date_Time\Programm\settings\Datumszaehler.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "C:\Users\Lorena\OneDrive\Dokumente\GitHub\Date_Time\Programm\settings\Datumszaehler.Debug.general.xcl" --backend -f "C:\Users\Lorena\OneDrive\Dokumente\GitHub\Date_Time\Programm\settings\Datumszaehler.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "C:\Users\tomwa\Documents\GitHub\Date_Time\Programm\settings\Datumszaehler.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\tomwa\Documents\GitHub\Date_Time\Programm\settings\Datumszaehler.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "C:\Users\Lorena\OneDrive\Dokumente\GitHub\Date_Time\Programm\settings\Datumszaehler.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\Lorena\OneDrive\Dokumente\GitHub\Date_Time\Programm\settings\Datumszaehler.Debug.driver.xcl" 
 }

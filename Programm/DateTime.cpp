@@ -40,7 +40,7 @@ void DateTime::countSecond()
     if (updateDaysCounter >= SECONDS_FOR_SMALLEST_MONTH)
     {
         day.setStopCountingAt(getMonthDays(month.getCount()));
-        updateDaysCounter = 0;
+        updateDaysCounter = 0; 
     }
 
     second.increment();
