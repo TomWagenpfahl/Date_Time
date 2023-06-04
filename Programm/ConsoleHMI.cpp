@@ -47,7 +47,7 @@ bool ConsoleHMI::checkRun()
         {
             cout << "Wie viele Sekunden soll der Zähler laufen?" << endl;
             cin >> runNumber;
-                }
+        }
 
         if (runNumber > 0)
         {
@@ -56,14 +56,13 @@ bool ConsoleHMI::checkRun()
         }
         return false;
     }
-    
+
     // Run one step
     if (runNumber > 0)
     {
         runNumber--;
         return true;
     }
-    
 }
 
 bool ConsoleHMI::checkShow()

@@ -57,8 +57,8 @@ public:
 
     /**
      * @brief Get the Instance object (Singleton implementation: Only one HMI should exist)
-     * 
-     * @return HMI& 
+     *
+     * @return HMI&
      */
     static HMI &getInstance();
 };

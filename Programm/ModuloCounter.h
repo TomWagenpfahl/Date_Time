@@ -51,8 +51,10 @@ public:
 	};
 
 private:
-	Counter *nextCounter; //! Stores the adress of the next modulo counter. This counter is incremented if modulo value is reached
-	int moduloValue;	  //! Stores the value at which the next counter is called and this counter is reset
+	//! Stores the adress of the next modulo counter. This counter is incremented if modulo value is reached
+	Counter *nextCounter;
+	//! Stores the value at which the next counter is called and this counter is reset
+	int moduloValue;
 };
 
 #endif //_MODULOCOUNTER_H

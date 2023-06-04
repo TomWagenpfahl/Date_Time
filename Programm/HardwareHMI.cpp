@@ -124,7 +124,7 @@ void HardwareHMI::showDate(int day, int month, int year)
     setLEDs(true, false, true, false);
     sleep();
 
-    // set LEDs to running status 
+    // set LEDs to running status
     setLEDs(isRunning, isRunning, isRunning, isRunning);
     return;
 }

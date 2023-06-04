@@ -88,7 +88,8 @@ public:
 	bool checkShow();
 
 private:
-	int32_t runNumber;		//! how often should increment be run
+	//! how often should increment be run
+	int32_t runNumber;
 };
 
 #endif //_CONSOLEHMI_H

@@ -10,9 +10,9 @@ const int DateTime::NON_LEAP_YEAR_ARRAY[12] = {31, 28, 31, 30, 31, 30, 31, 31, 3
 const uint32_t DateTime::SECONDS_FOR_SMALLEST_MONTH = 2419200;
 
 #if defined(CONSOLE_HMI_USED)
-    HMI &DateTime::hmi = ConsoleHMI::getInstance();
+HMI &DateTime::hmi = ConsoleHMI::getInstance();
 #else
-    HMI &DateTime::hmi = HardwareHMI::getInstance();
+HMI &DateTime::hmi = HardwareHMI::getInstance();
 #endif // CONSOLE_HMI_USED
 
 void DateTime::run()
@@ -31,7 +31,6 @@ void DateTime::run()
     {
         countSecond();
     }
-
 }
 
 void DateTime::countSecond()
@@ -40,7 +39,7 @@ void DateTime::countSecond()
     if (updateDaysCounter >= SECONDS_FOR_SMALLEST_MONTH)
     {
         day.setStopCountingAt(getMonthDays(month.getCount()));
-        updateDaysCounter = 0; 
+        updateDaysCounter = 0;
     }
 
     second.increment();

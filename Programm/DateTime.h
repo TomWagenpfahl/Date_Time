@@ -37,10 +37,9 @@ public:
 																																		day(&month, startDay, 1, getMonthDays(startMonth)),
 																																		hour(&day, startHour, 24),
 																																		minute(&hour, startMinute, 60),
-																																		second(&minute, startSecond, 60)
-	{
+																																		second(&minute, startSecond, 60){
 
-	};
+																																		};
 
 	/**
 	 * @brief This will run the dateTime Class. Each call may result in one increment
@@ -49,7 +48,6 @@ public:
 	void run();
 
 private:
-
 	/**
 	 * @brief Counts up by one second
 	 *
@@ -72,39 +70,38 @@ private:
 	 */
 	int getMonthDays(int thisMonth);
 
-        //! The human machine interface which can either be console or hardware of STM32
-	static HMI &hmi; 
-        
-        //! The year counter object
-	Counter year;	
-        
-	 //! The month counter object
-        OffsetCounter month; 
-        
-        //! The day counter object
+	//! The human machine interface which can either be console or hardware of STM32
+	static HMI &hmi;
+
+	//! The year counter object
+	Counter year;
+
+	//! The month counter object
+	OffsetCounter month;
+
+	//! The day counter object
 	OffsetCounter day;
-        
-        //! The hour counter object
-	ModuloCounter hour;	  
-        
-        //! The minute counter object
-	ModuloCounter minute; 
-        
-        //! The second counter object
-	ModuloCounter second; 
-        
-         //! counts the seconds to update the date of the month once every month period.
+
+	//! The hour counter object
+	ModuloCounter hour;
+
+	//! The minute counter object
+	ModuloCounter minute;
+
+	//! The second counter object
+	ModuloCounter second;
+
+	//! counts the seconds to update the date of the month once every month period.
 	uint32_t updateDaysCounter;
-        
 
 	//! 60s * 60min * 24h * 28days The time that the smallest month could be. This is needed to update the days not every second but every month.
-        static const uint32_t SECONDS_FOR_SMALLEST_MONTH; 
-        
-        //! an array which stores all the values of days each month for leap years
-	static const int LEAP_YEAR_ARRAY[12];	
-        
-        //! an array which stores all the values of days each month non for leap years
-	static const int NON_LEAP_YEAR_ARRAY[12];		  
+	static const uint32_t SECONDS_FOR_SMALLEST_MONTH;
+
+	//! an array which stores all the values of days each month for leap years
+	static const int LEAP_YEAR_ARRAY[12];
+
+	//! an array which stores all the values of days each month non for leap years
+	static const int NON_LEAP_YEAR_ARRAY[12];
 };
 
 #endif //_DATETIME_H

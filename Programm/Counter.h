@@ -47,7 +47,8 @@ public:
 	};
 
 private:
-	int count; //! Stores the count value of the counter object
+	//! Stores the count value of the counter object
+	int count;
 };
 
 #endif //_COUNTER_H

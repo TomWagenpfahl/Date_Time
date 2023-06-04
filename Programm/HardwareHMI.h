@@ -28,13 +28,13 @@ private:
 
 	/**
 	 * @brief Deleted Copy Constructor. Singleton should not be able to be copied
-	 * 
+	 *
 	 */
 	HardwareHMI(const HardwareHMI &) = delete;
 
 	/**
 	 * @brief Delete assignment operator (for Singleton)
-	 * 
+	 *
 	 */
 	void operator=(const HardwareHMI &) = delete;
 
@@ -84,7 +84,8 @@ public:
 	 *
 	 * @return HardwareHMI
 	 */
-	static HardwareHMI &getInstance() {
+	static HardwareHMI &getInstance()
+	{
 		static HardwareHMI hmi; // stores the HardwareHMI object (Singleton implementation)
 		return hmi;
 	};
@@ -172,20 +173,31 @@ public:
 	bool checkShow();
 
 private:
-	StmGpio gpioA; //! stores the gpio object of gpio port A
-	StmGpio gpioB; //! stores the gpio object of gpio port B
+	//! stores the gpio object of gpio port A
+	StmGpio gpioA;
+	//! stores the gpio object of gpio port B
+	StmGpio gpioB;
 
-	bool isRunning = false; //! boolean that stores weather the app is running or is stopped
+	//! boolean that stores weather the app is running or is stopped
+	bool isRunning = false;
 
-	static const int LED_1_A = 8; //! Stores the pin of port A where LED 1 is located
-	static const int LED_2_A = 9; //! Stores the pin of port A where LED 2 is located
-	static const int LED_3_A = 10; //! Stores the pin of port A where LED 3 is located
-	static const int LED_4_B = 10; //! Stores the pin of port B where LED 4 is located
-	static const int SW_1_B = 5;   //! Stores the pin of port B where button 1 is located
-	static const int SW_2_B = 3;   //! Stores the pin of port B where button 2 is located
+	//! Stores the pin of port A where LED 1 is located
+	static const int LED_1_A = 8;
+	//! Stores the pin of port A where LED 2 is located
+	static const int LED_2_A = 9;
+	//! Stores the pin of port A where LED 3 is located
+	static const int LED_3_A = 10;
+	//! Stores the pin of port B where LED 4 is located
+	static const int LED_4_B = 10;
+	//! Stores the pin of port B where button 1 is located
+	static const int SW_1_B = 5;
+	//! Stores the pin of port B where button 2 is located
+	static const int SW_2_B = 3;
 
-	static const uint32_t GPIOA_ADDRESS = 0x40020000; //! Stores the address of port A on STM32F401
-	static const uint32_t GPIOB_ADDRESS = 0x40020400; //! Stores the address of port B on STM32F401
+	//! Stores the address of port A on STM32F401
+	static const uint32_t GPIOA_ADDRESS = 0x40020000;
+	//! Stores the address of port B on STM32F401
+	static const uint32_t GPIOB_ADDRESS = 0x40020400;
 };
 
 #endif //_HARDWAREHMI_H

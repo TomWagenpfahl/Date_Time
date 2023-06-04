@@ -53,8 +53,11 @@ public:
 	int getStopCountingAt() { return stopCountingAt; };
 
 private:
-	int startCountingAt; //! Here the counter will start to count after reaching it's maximum value
-	int stopCountingAt;	 //! Here the counter will stop to count and reset when incrementing again while having this value
+	//! Here the counter will start to count after reaching it's maximum value
+	int startCountingAt;
+
+	//! Here the counter will stop to count and reset when incrementing again while having this value
+	int stopCountingAt;
 };
 
 #endif //_OFFSETCOUNTER_H
